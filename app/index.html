@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Installer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="text/javascript">
+      window.$ = window.JQuery = require('../node_modules/jquery/dist/jquery.slim.js');
+    </script>
+    <script type="text/javascript" src="js/eventos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark ">
+      <a class="navbar" href="#"></a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a id="step1" class="nav-link active" href="#">
+                  <span data-feather="arrow-right-circle"></span>
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="step2" class="nav-link" href="#" style="display:none">
+                  <span data-feather="arrow-right-circle"></span>
+                  Backup
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="step3" class="nav-link" href="#" style="display:none">
+                  <span data-feather="arrow-right-circle"></span>
+                  Release
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h2 class="h2">Instalador Socmovil</h2>
+          </div>
+          <div id="messageSection" class="justify-content-between flex-wrap flex-md-nowrap align-items-center mb-3 border-bottom">
+            <blockquote class="blockquote">
+              <p class="h6">
+                <br>
+                <strong><h6>NOTA:</h6></strong> Antes de continuar la instalación, asegurese que el archivo de configuración sea correcto. <br><br>
+                El archivo de configuración se encuentra en la ruta: <strong><em>app/settings.json</em></strong>.
+              </p>
+            </blockquote>            
+          </div>
+          <div id="radioButtonStartSection" class="border-bottom">
+            <br>
+            <div>
+              <h5>¿Qué desea realizar?</h5>
+            </div>
+            <div>
+              <input type="radio" id="install" name="install" value="install"> Instalar
+            </div>
+            <div>
+              <input type="radio" id="rollBack" name="rollBack" value="rollBack"> Roll back
+            </div><br><br><br>
+          </div>
+          <div id="controlButtonsSection" class="row footer col-md-8">
+            <div class="col-sm-4">
+              <input id="backButton" class="btn btn-sm btn-secondary" type="button" name="" value="<< Atrás" style="display:none">              
+            </div>
+            <div class="col-sm-4">
+              <input id="nextButton" class="btn btn-sm btn-secondary" type="button" name="" value="Siguiente >>">
+            </div>
+            <div class="col-sm-4">
+              <input id="cancelButton" class="btn btn-sm btn-danger" type="button" name="" value="Cancelar">
+            </div>
+          </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!--<script src="js/bootstrap/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="js/eventos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+    
+  </body>
+</html>
